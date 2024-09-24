@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="16.css">
+</head>
+<body>
+
+    <div class="controls">
+        <select id="filter" onchange="filterGallery()">
+            <option value="all">All</option>
+            <option value="nature">Nature</option>
+            <option value="animals">Animals</option>
+            <option value="architecture">Architecture</option>
+            <option value="scenario">Scenario</option>
+        </select>
+
+        <select id="sort" onchange="sortGallery()">
+            <option value="name">Sort by Name</option>
+            <option value="date">Sort by Date</option>
+        </select>
+    </div>
+
+    <div class="gallery" id="gallery">
+        <div class="gallery-item" data-category="nature" data-name="Mountain" data-date="2023-02-01">
+            <img src="images/mountain.jpg" alt="Mountain">
+            <p>Mountain</p>
+        </div>
+        <div class="gallery-item" data-category="animals" data-name="Dog" data-date="2023-01-15">
+            <img src="images/Dog.jpg" alt="Dog">
+            <p>Dog</p>
+        </div>
+        <div class="gallery-item" data-category="animals" data-name="Cat" data-date="2023-01-14">
+            <img src="images/cat.jpg" alt="Cat">
+            <p>Cat</p>
+        </div>
+        <div class="gallery-item" data-category="architecture" data-name="Bridge" data-date="2023-03-12">
+            <img src="images/bridge.jpg" alt="Bridge">
+            <p>Bridge</p>
+        </div>
+        <div class="gallery-item" data-category="architecture" data-name="Tower" data-date="2023-09-11">
+            <img src="images/tower.jpg" alt="Tower">
+            <p>Tower</p>
+        </div>
+        <div class="gallery-item" data-category="nature" data-name="Forest" data-date="2023-02-25">
+            <img src="images/forest.jpg" alt="Forest">
+            <p>Forest</p>
+        </div>
+        <div class="gallery-item" data-category="scenario" data-name="Wild" data-date="2023-02-24">
+            <img src="images/image3.jpg" alt="Wild">
+            <p>Sunrise</p>
+        </div>
+    </div>
+
+    <script src="16.js"></script>
+
+</body>
+</html>
